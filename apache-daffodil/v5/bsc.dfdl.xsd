@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions"
+  xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/" xmlns:ex="http://example.com"
+  targetNamespace="http://example.com" elementFormDefault="unqualified">
+
+  <xs:include schemaLocation="org/apache/daffodil/xsd/DFDLGeneralFormat.dfdl.xsd" />
+
+  <xs:annotation>
+    <xs:appinfo source="http://www.ogf.org/dfdl/">
+      <dfdl:format ref="ex:GeneralFormat"
+      />
+    </xs:appinfo>
+  </xs:annotation>
+
+  <xs:element name="file">
+    <xs:complexType>
+      <xs:sequence dfdl:separator="%NL;" dfdl:separatorPosition="postfix">
+        <xs:element name="record" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="HR" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="4" dfdl:lengthUnits="characters" />
+                <xs:element name="Name" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="10" dfdl:lengthUnits="characters" />
+                <xs:element name="DM" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="11" dfdl:lengthUnits="characters" />
+                <xs:element name="HD" type="xs:int" dfdl:lengthKind="explicit" dfdl:length="6" dfdl:lengthUnits="characters" dfdl:textPadKind="padChar" dfdl:textTrimKind="padChar" dfdl:textNumberPattern="#" />
+                <xs:element name="SAO" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="6" dfdl:lengthUnits="characters" />
+                <xs:element name="FK5" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="4" dfdl:lengthUnits="characters" />
+                <xs:element name="IRflag" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="r_IRflag" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="Multiple" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="ADS" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="5" dfdl:lengthUnits="characters" />
+                <xs:element name="ADScomp" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="VarID" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="9" dfdl:lengthUnits="characters" />
+                <xs:element name="RAh1900" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="RAm1900" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="RAs1900" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="4" dfdl:lengthUnits="characters" />
+                <xs:element name="DE-1900" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="DEd1900" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="DEm1900" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="DEs1900" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="RAh" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="RAm" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="RAs" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="4" dfdl:lengthUnits="characters" />
+                <xs:element name="DE-" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="DEd" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="DEm" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="DEs" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="GLON" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="6" dfdl:lengthUnits="characters" />
+                <xs:element name="GLAT" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="6" dfdl:lengthUnits="characters" />
+                <xs:element name="Vmag" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="5" dfdl:lengthUnits="characters" />
+                <xs:element name="n_Vmag" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="u_Vmag" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="B-V" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="5" dfdl:lengthUnits="characters" />
+                <xs:element name="u_B-V" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="U-B" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="5" dfdl:lengthUnits="characters" />
+                <xs:element name="u_U-B" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="R-I" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="5" dfdl:lengthUnits="characters" />
+                <xs:element name="n_R-I" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="SpType" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="20" dfdl:lengthUnits="characters" />
+                <xs:element name="n_SpType" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="pmRA" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="6" dfdl:lengthUnits="characters" />
+                <xs:element name="pmDE" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="6" dfdl:lengthUnits="characters" />
+                <xs:element name="n_Parallax" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="Parallax" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="5" dfdl:lengthUnits="characters" />
+                <xs:element name="RadVel" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="4" dfdl:lengthUnits="characters" />
+                <xs:element name="n_RadVel" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="4" dfdl:lengthUnits="characters" />
+                <xs:element name="l_RotVel" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="RotVel" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="3" dfdl:lengthUnits="characters" />
+                <xs:element name="u_RotVel" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+                <xs:element name="Dmag" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="4" dfdl:lengthUnits="characters" />
+                <xs:element name="Sep" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="6" dfdl:lengthUnits="characters" />
+                <xs:element name="MultID" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="4" dfdl:lengthUnits="characters" />
+                <xs:element name="MultCnt" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="2" dfdl:lengthUnits="characters" />
+                <xs:element name="NoteFlag" type="xs:string" dfdl:lengthKind="explicit" dfdl:length="1" dfdl:lengthUnits="characters" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSuite suiteName="Namespaces"
+  xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/"
+  xmlns:tdml="http://www.ibm.com/xmlns/dfdl/testData"
+  defaultRoundTrip="onePass">
+
+  <tdml:parserTestCase name="bsc_test" root="file"
+    model="bsc.dfdl.xsd" description="Test parsing and unparsing"
+    roundTrip="onePass">
+    <tdml:document>
+      <tdml:documentPart type="file">../bsc5_padded.dat</tdml:documentPart>
+    </tdml:document>
+    <tdml:infoset>
+      <tdml:dfdlInfoset type="file">bsc5_padded.xml</tdml:dfdlInfoset>
+    </tdml:infoset>
+  </tdml:parserTestCase>
+</testSuite>

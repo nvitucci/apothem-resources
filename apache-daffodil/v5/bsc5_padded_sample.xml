@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ex:file xmlns:ex="http://example.com">
+  <record>
+    <HR>   1</HR>
+    <Name>          </Name>
+    <DM>BD+44 4550 </DM>
+    <HD>3</HD>
+    <SAO> 36042</SAO>
+    <FK5>    </FK5>
+    <IRflag> </IRflag>
+    <r_IRflag> </r_IRflag>
+    <Multiple> </Multiple>
+    <ADS>   46</ADS>
+    <ADScomp>  </ADScomp>
+    <VarID>         </VarID>
+    <RAh1900>00</RAh1900>
+    <RAm1900>00</RAm1900>
+    <RAs1900>01.1</RAs1900>
+    <DE-1900>+</DE-1900>
+    <DEd1900>44</DEd1900>
+    <DEm1900>40</DEm1900>
+    <DEs1900>22</DEs1900>
+    <RAh>00</RAh>
+    <RAm>05</RAm>
+    <RAs>09.9</RAs>
+    <DE->+</DE->
+    <DEd>45</DEd>
+    <DEm>13</DEm>
+    <DEs>45</DEs>
+    <GLON>114.44</GLON>
+    <GLAT>-16.88</GLAT>
+    <Vmag> 6.70</Vmag>
+    <n_Vmag> </n_Vmag>
+    <u_Vmag> </u_Vmag>
+    <B-V>+0.07</B-V>
+    <u_B-V> </u_B-V>
+    <U-B>+0.08</U-B>
+    <u_U-B> </u_U-B>
+    <R-I>     </R-I>
+    <n_R-I> </n_R-I>
+    <SpType>  A1Vn              </SpType>
+    <n_SpType> </n_SpType>
+    <pmRA>-0.012</pmRA>
+    <pmDE>-0.018</pmDE>
+    <n_Parallax> </n_Parallax>
+    <Parallax>     </Parallax>
+    <RadVel>-018</RadVel>
+    <n_RadVel>    </n_RadVel>
+    <l_RotVel>  </l_RotVel>
+    <RotVel>195</RotVel>
+    <u_RotVel> </u_RotVel>
+    <Dmag> 4.2</Dmag>
+    <Sep>  21.6</Sep>
+    <MultID>AC  </MultID>
+    <MultCnt> 3</MultCnt>
+    <NoteFlag> </NoteFlag>
+  </record>
+  <record>
+    <HR>   2</HR>
+    <Name>          </Name>
+    <DM>BD-01 4525 </DM>
+    <HD>6</HD>
+    <SAO>128569</SAO>
+    <FK5>    </FK5>
+    <IRflag> </IRflag>
+    <r_IRflag> </r_IRflag>
+    <Multiple> </Multiple>
+    <ADS>     </ADS>
+    <ADScomp>  </ADScomp>
+    <VarID>         </VarID>
+    <RAh1900>23</RAh1900>
+    <RAm1900>59</RAm1900>
+    <RAs1900>56.2</RAs1900>
+    <DE-1900>-</DE-1900>
+    <DEd1900>01</DEd1900>
+    <DEm1900>03</DEm1900>
+    <DEs1900>30</DEs1900>
+    <RAh>00</RAh>
+    <RAm>05</RAm>
+    <RAs>03.8</RAs>
+    <DE->-</DE->
+    <DEd>00</DEd>
+    <DEm>30</DEm>
+    <DEs>11</DEs>
+    <GLON> 98.33</GLON>
+    <GLAT>-61.14</GLAT>
+    <Vmag> 6.29</Vmag>
+    <n_Vmag> </n_Vmag>
+    <u_Vmag> </u_Vmag>
+    <B-V>+1.10</B-V>
+    <u_B-V> </u_B-V>
+    <U-B>+1.02</U-B>
+    <u_U-B> </u_U-B>
+    <R-I>     </R-I>
+    <n_R-I> </n_R-I>
+    <SpType> gG9                </SpType>
+    <n_SpType> </n_SpType>
+    <pmRA>+0.045</pmRA>
+    <pmDE>-0.060</pmDE>
+    <n_Parallax> </n_Parallax>
+    <Parallax>     </Parallax>
+    <RadVel>+014</RadVel>
+    <n_RadVel>V   </n_RadVel>
+    <l_RotVel>  </l_RotVel>
+    <RotVel>   </RotVel>
+    <u_RotVel> </u_RotVel>
+    <Dmag>    </Dmag>
+    <Sep>      </Sep>
+    <MultID>    </MultID>
+    <MultCnt>  </MultCnt>
+    <NoteFlag> </NoteFlag>
+  </record>
+</ex:file>
