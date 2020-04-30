@@ -1,0 +1,12 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#>
+@prefix id:   <http://www.example.org/id/> .
+@prefix ont:  <http://www.example.org/ont#> .
+
+ont:MyType rdfs:subClassOf ont:MySuperType .
+ont:myProp rdfs:subPropertyOf ont:mySuperProp .
+id:a rdf:type ont:MyType .
+id:a ont:myProp id:x .
+id:b owl:sameAs id:a .
+
