@@ -1,2 +1,8 @@
 .ipynb_checkpoints
+
+# IntelliJ
 .idea
+*.iml
+
+# Maven
+target/
